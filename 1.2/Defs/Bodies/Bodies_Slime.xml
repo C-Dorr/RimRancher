@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Definitions for all slimes-->
+
+<!-- General Slime:
+  Pink
+  Dervish
+  Puddle
+  Quantum
+  Twinkle
+  Rad
+  Mosaic
+  Fire
+  Boom-->
+<BodyDef>
+    <defName>DOOR_Slime_General</defName>
+    <label>slime_general</label>
+    <corePart>
+    	<def>Body</def>
+    	<height>Middle</height>
+    	<depth>Outside</depth>
+    	<parts>
+        <li>
+          <def>DOOR_CellWall</def>
+          <customLabel>Cell Wall</customLabel>
+          <coverage>1</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>Eye</def>
+              <customLabel>left Eye</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+            <li>
+              <def>Eye</def>
+              <customLabel>Right Eye</customLabel>
+              <coverage>0.2</coverage>
+            </li>
+            <li>
+              <def>DOOR_Mouth</def>
+              <customLabel>mouth</customLabel>
+              <coverage>0.2</coverage>
+              <depth>Outside</depth>
+            </li>
+            <li>
+            	<def>DOOR_SlimeCore</def>
+            	<customLabel>Inner Core</customLabel>
+            	<coverage>0.3</coverage>
+            	<depth>Inside</depth>
+            </li>
+          </parts>
+        </li>
+      </parts>
+    </corePart>
+</BodyDef>
+
+
+<!--Cat Slime:
+   Tabby
+   Hunter-->
+<BodyDef>
+  <defName>DOOR_Slime_Cat</defName>
+  <label>slime_cat</label>
+  <corePart>
+    <def>Body</def>
+    <height>Middle</height>
+    <depth>Outside</depth>
+    <parts>
+      <li>
+        <def>DOOR_CellWall</def>
+        <customLabel>Cell Wall</customLabel>
+        <coverage>.7</coverage>
+        <height>Top</height>
+        <parts>
+          <li>
+            <def>Eye</def>
+            <customLabel>left Eye</customLabel>
+            <coverage>0.1</coverage>
+          </li>
+          <li>
+            <def>Eye</def>
+            <customLabel>Right Eye</customLabel>
+            <coverage>0.1</coverage>
+          </li>
+          <li>
+            <def>DOOR_Mouth</def>
+            <customLabel>mouth</customLabel>
+            <coverage>0.13</coverage>
+            <depth>Outside</depth>
+          </li>
+          <li>
+            <def>DOOR_SlimeCore</def>
+            <customLabel>Inner Core</customLabel>
+            <coverage>0.2</coverage>
+            <depth>Inside</depth>
+          </li>
+        </parts>
+      </li>
+      <li>
+        <def>Ear</def>
+        <height>Top</height>
+        <customLabel>Right ear</customLabel>
+        <coverage>0.09</coverage>
+      </li>
+      <li>
+        <def>Ear</def>
+        <height>Top</height>
+        <customLabel>left ear</customLabel>
+        <coverage>0.09</coverage>
+      </li>
+      <li>
+        <def>Tail</def>
+        <height>Bottom</height>
+        <customLabel>tail</customLabel>
+        <coverage>0.1</coverage>
+      </li>
+    </parts>
+  </corePart>
+</BodyDef>
+
+<!--Topped Slimes:
+  Honey
+  Tangle
+  Crystal
+  Quicksilver
+  Rock-->
+<BodyDef>
+  <defName>DOOR_Slime_Topped</defName>
+  <label>slime_topped</label>
+  <corePart>
+    <def>Body</def>
+    <height>Top</height>
+    <depth>Outside</depth>
+    <parts>
+      <li>
+        <def>Eye</def>
+        <customLabel>left eye</customLabel>
+        <coverage>0.1</coverage>
+      </li>
+      <li>
+        <def>Eye</def>
+        <customLabel>Right eye</customLabel>
+        <coverage>0.1</coverage>
+      </li>
+      <li>
+        <def>DOOR_Headpiece</def>
+        <customLabel>left ear</customLabel>
+        <coverage>0.15</coverage>
+      </li>
+      <li>
+        <def>DOOR_Mouth</def>
+        <customLabel>mouth</customLabel>
+        <coverage>0.1</coverage>
+        <depth>Outside</depth>
+      </li>
+      <li>
+        <def>DOOR_SlimeCore</def>
+        <customLabel>inner core</customLabel>
+        <coverage>0.4</coverage>
+        <depth>Inside</depth>
+      </li>
+    </parts>
+  </corePart>
+</BodyDef>
+
+</Defs>

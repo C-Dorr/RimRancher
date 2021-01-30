@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--===================== Misc =====================-->
+
+  <BodyPartDef>
+  	<defName>DOOR_SlimeCore</defName>
+  	<label>slime core</label>
+  	<hitPoints>100</hitPoints>
+  	<frostbiteVulnerability>1.0</frostbiteVulnerability>
+  	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  	<skinCovered>true</skinCovered>
+  	<solid>false</solid>
+  	<alive>true</alive>
+  	<bleedRate>0.3</bleedRate>
+  	<tags>
+  		<li>BloodPumpingSource</li>
+      <li>ConsciousnessSource</li>
+      <li>BloodFiltrationSource</li>
+      <li>BreathingSource</li>
+      <li>TalkingSource</li>
+      <li>MetabolismSource</li>
+  	</tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DOOR_CellWall</defName>
+    <label>cell wall</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>1.0</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0.1</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <solid>false</solid>
+    <alive>true</alive>
+    <bleedRate>1.5</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DOOR_Headpiece</defName>
+    <label>headpiece</label>
+    <hitPoints>100</hitPoints>
+    <frostbiteVulnerability>1.0</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>true</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DOOR_Mouth</defName>
+    <label>mouth</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>0.2</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>false</solid>
+    <alive>true</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>BreathingPathway</li>
+      <li>TalkingPathway</li>
+      <li>EatingSource</li>
+    </tags>
+  </BodyPartDef>
+</Defs>

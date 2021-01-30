@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+<ThingDef Abstract="True" Name="Plort" ParentName="OrganicProductBase">
+
+	<graphicData>
+		<texPath>Things/Resource/SlimeProductRaw/Plort_Test</texPath>
+	</graphicData>
+	<socialPropernessMatters>true</socialPropernessMatters>
+	<statBases>
+		<Mass>1</Mass>
+		<MaxHitPoints>100</MaxHitPoints>
+		<DeteriorationRate>0.5</DeteriorationRate>
+		<Flammability>0.1</Flammability>
+	</statBases>
+</ThingDef>
+
+</Defs>

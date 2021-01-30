@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--======================================================-->
+	<!--==================== Tabby Slime =====================-->
+	<!--======================================================-->
+	
+	<ThingDef ParentName="SlimeThingBase">
+		<defName>DOOR_Tabby_Slime</defName>
+		<label>tabby slime</label>
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Tabby_Slime -->
+		<description>Tabby slimes share many curious similarities to domesticated house cats of Earth. With their perky ears, striped backs, and swaying tails, you'd almost mistake them for a true feline... if they weren't made entirely of gooey slime, of course.</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		</statBases>
+		<race>
+			<body>DOOR_Slime_Cat</body>
+			<wildness></wildness>
+			<petness>1.0</petness>
+			<predator>true</predator>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<foodType>CarnivoreAnimal</foodType>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1)</li>
+					<li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DOOR_Tabby_Slime</defName>
+		<label>Tabby Slime</label>
+		<race>DOOR_Tabby_Slime</race>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>0.2</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Resource/Slime/Tabby_Slime/Tabby_Slime</texPath>
+					<drawSize>1.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase" Abstract="True" Name="SlimeThingBase">
+		<statBases>
+			<!--PlortAmount>10</PlortAmount
+			Maybe make this LeatherAmount and direct the image to plort images.-->
+			<MoveSpeed>4.0</MoveSpeed>
+		</statBases>
+		<race>
+			<hasGenders>false</hasGenders>
+			<trainability>Simple</trainability>
+			<petness>0.5</petness>
+			<manhunterOnDamageChance>0.0</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
+			<nameOnNuzzleChance>1.0</nameOnNuzzleChance>
+			<baseBodySize>0.4</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<baseHungerRate>0.1</baseHungerRate>
+			<wildness>0.01</wildness>
+		    <hediffGiverSets>
+        		<li>OrganicStandard</li>
+      		</hediffGiverSets>
+			<gestationPeriodDays>1</gestationPeriodDays>
+			<lifeExpectancy>100</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+	    <recipes>
+  			<li>ExciseCarcinoma</li>
+  			<li>AdministerMechSerumHealer</li>
+      		<li>Euthanize</li>
+  			<li>Anesthetize</li>
+  			<li>CureScaria</li>
+  			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+		</recipes>		
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase" Abstract="True">
+	</PawnKindDef>
+</Defs>	

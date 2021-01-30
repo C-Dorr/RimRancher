@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--======================================================-->
+	<!--===================== Pink Slime =====================-->
+	<!--======================================================-->
+	
+	<ThingDef ParentName="SlimeThingBase">
+		<defName>DOOR_Pink_Slime</defName>
+		<label>pink slime</label>
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Pink_Slime -->
+		<description>Pink Slimes are the most common slime found on the Far, Far Range. They're cheerful, docile, and the easiest of all slimes to ranch. A pink slime will eat anything you put in front of it, though they have no favorite food, and their plorts are the least valuable of all slimes.</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		</statBases>
+		<race>
+			<body>DOOR_Slime_General</body>
+			<petness>3.0</petness>
+			<predator>false</predator>
+			<foodType>OmnivoreAnimal</foodType>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1)</li>
+					<li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DOOR_Pink_Slime</defName>
+		<label>Pink Slime</label>
+		<race>DOOR_Pink_Slime</race>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>0.0</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Resource/Slime/Pink_Slime/Pink_Slime</texPath>
+					<drawSize>1.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>
