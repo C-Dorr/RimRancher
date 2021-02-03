@@ -7,6 +7,12 @@
 			Maybe make this LeatherAmount and direct the image to plort images.-->
 			<MoveSpeed>4.0</MoveSpeed>
 		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef></plortDef>
+			</li>
+		</comps>
 		<race>
 			<hasGenders>false</hasGenders>
 			<trainability>Simple</trainability>
@@ -32,15 +38,7 @@
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-		</race>
-	    <recipes>
-  			<li>ExciseCarcinoma</li>
-  			<li>AdministerMechSerumHealer</li>
-      		<li>Euthanize</li>
-  			<li>Anesthetize</li>
-  			<li>CureScaria</li>
-  			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
-		</recipes>		
+		</race>		
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase" Abstract="True">

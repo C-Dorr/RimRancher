@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-
-<ThingDef Abstract="True" Name="Plort" ParentName="OrganicProductBase">
-
-	<graphicData>
-		<texPath>Things/Resource/SlimeProductRaw/Plort_Test</texPath>
-	</graphicData>
+<!--============Plort Base================-->
+<ThingDef Abstract="True" Name="DOOR_PlortBase" ParentName="ResourceBase">
 	<socialPropernessMatters>true</socialPropernessMatters>
 	<statBases>
 		<Mass>1</Mass>
@@ -14,6 +10,25 @@
 		<DeteriorationRate>0.5</DeteriorationRate>
 		<Flammability>0.1</Flammability>
 	</statBases>
+</ThingDef>
+
+<!-- Pink Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_PinkPlort">
+	<defName>DOOR_PinkPlort</defName>
+	<label>Pink plort</label>
+	<description>Pink Plorts are an excellent "multi purpose generic substance" used to manufacture everything from food products to household cleaners. All over the Earth, people are eating burgers, sweetening their coffees, or scrubbing their floors with pink plort products. That's some serious versatility!</description>
+	<statBases>
+      <MarketValue>23.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Plorter">
+        <hatcherDaystoHatch>0.5</hatcherDaystoHatch>
+        <hatcherPawn>DOOR_Pink_Slime</hatcherPawn>
+      </li>
+    </comps>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Plort_Test
+	</graphicData>
 </ThingDef>
 
 </Defs>
