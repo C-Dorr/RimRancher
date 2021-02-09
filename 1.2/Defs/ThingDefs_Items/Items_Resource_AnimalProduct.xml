@@ -20,14 +20,9 @@
 	<statBases>
       <MarketValue>23.0</MarketValue>
     </statBases>
-    <comps>
-      <li Class="CompProperties_Plorter">
-        <hatcherDaystoHatch>0.5</hatcherDaystoHatch>
-        <hatcherPawn>DOOR_Pink_Slime</hatcherPawn>
-      </li>
-    </comps>
 	<graphicData>
-		<texPath>Things/Resource/SlimeProduct/Plort_Test
+		<texPath>Things/Resource/SlimeProduct/Pink</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
 	</graphicData>
 </ThingDef>
 
