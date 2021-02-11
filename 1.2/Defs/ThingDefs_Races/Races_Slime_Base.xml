@@ -7,12 +7,6 @@
 			Maybe make this LeatherAmount and direct the image to plort images.-->
 			<MoveSpeed>4.0</MoveSpeed>
 		</statBases>
-		<comps>
-			<li Class="CompProperties_PlortLayer">
-				<plortCountRange>1</plortCountRange>
-				<plortDef></plortDef>
-			</li>
-		</comps>
 		<race>
 			<hasGenders>false</hasGenders>
 			<trainability>Simple</trainability>
@@ -22,7 +16,7 @@
 			<nameOnNuzzleChance>1.0</nameOnNuzzleChance>
 			<baseBodySize>0.4</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
-			<baseHungerRate>0.1</baseHungerRate>
+			<baseHungerRate>0.35</baseHungerRate>
 			<wildness>0.01</wildness>
 		    <hediffGiverSets>
         		<li>OrganicStandard</li>

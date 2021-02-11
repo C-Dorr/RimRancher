@@ -14,6 +14,13 @@
 			<MoveSpeed>4.0</MoveSpeed>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef>DOOR_PinkPlort</plortDef>
+				<plortLayIntervalDays>0.25</plortLayIntervalDays>
+			</li>
+		</comps>
 		<race>
 			<body>DOOR_Slime_General</body>
 			<petness>3.0</petness>
