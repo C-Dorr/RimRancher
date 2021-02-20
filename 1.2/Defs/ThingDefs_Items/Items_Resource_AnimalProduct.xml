@@ -18,10 +18,250 @@
 	<label>Pink plort</label>
 	<description>Pink Plorts are an excellent "multi purpose generic substance" used to manufacture everything from food products to household cleaners. All over the Earth, people are eating burgers, sweetening their coffees, or scrubbing their floors with pink plort products. That's some serious versatility!</description>
 	<statBases>
-      <MarketValue>23.0</MarketValue>
+      <MarketValue>7.0</MarketValue>
     </statBases>
 	<graphicData>
 		<texPath>Things/Resource/SlimeProduct/Pink</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!-- Rock Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_RockPlort">
+	<defName>DOOR_RockPlort</defName>
+	<label>rock plort</label>
+	<description>Rock plorts are prized for being a key component in the production of 'blue metal,' an amazing alloy that's stronger than titanium and lighter than plastic. Because of its amazing strength, blue metal is often a key component in the hulls of light-speed capable starships, synthetic appendages, and protective holophone cases.</description>
+	<statBases>
+      <MarketValue>15.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Rock</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!-- Tabby Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_TabbyPlort">
+	<defName>DOOR_TabbyPlort</defName>
+	<label>tabby plort </label>
+	<description>Tabby plorts are a key ingredient in a variety of 'performance enhancing' products that grant the consumer a surge of the tabby slime's signature energy and exuberance. And while athletes the world over take them to gain an edge, prolonged use often results in 'uncontrollable butt wiggles,' another (less desirable) signature of the tabby slime.</description>
+	<statBases>
+      <MarketValue>15.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Tabby</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!--  Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_Plort">
+	<defName>DOOR_Plort</defName>
+	<label>plort</label>
+	<description> Tabby plorts are a key ingredient in a variety of 'performance enhancing' products that grant the consumer a surge of the tabby slime's signature energy and exuberance. And while athletes the world over take them to gain an edge, prolonged use often results in 'uncontrollable butt wiggles,' another (less desirable) signature of the tabby slime.</description>
+	<statBases>
+      <MarketValue>15.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!-- Hunter Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_HunterPlort">
+	<defName>DOOR_HunterPlort</defName>
+	<label>hunter plort</label>
+	<description>Amazingly, a serum can be made from hunter slime plorts that can actually render a person invisible! The effect only lasts for about a day, but this serum is nonetheless incredibly popular back on Earth as many people find its effects very soothing.
+
+	Sometimes you feel like you just want to disappear for a while. But then about a day goes by and you realize that not only did you miss being seen, but others missed seeing you too.</description>
+	<statBases>
+      <MarketValue>60.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Hunter</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!-- Honey Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_HoneyPlort">
+	<defName>DOOR_HoneyPlort</defName>
+	<label>Honey plort</label>
+	<description>Honey plorts are highly prized by food manufacturers. Though the plorts are naturally incredibly sweet, the discovery that they could be refined into an even sweeter substance made their demand soar. These refined honey plorts are said to score an unprecedented 867 on the Werner-Thompkins-Hong sacchrino scale, just a few points shy of 'not fit for human consumption.</description>
+	<statBases>
+      <MarketValue>30.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Honey</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!-- Puddle Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_PuddlePlort">
+	<defName>DOOR_PuddlePlort</defName>
+	<label>puddle plort</label>
+	<description>Puddle plorts are made almost entirely from an incredible hydro compound known by chemists across the galaxy as H2Ohhhhh. This compound is used to create an absurdly expensive brand of bottled drinking water that is sought after by the elite back on Earth. While some people argue that there is little difference in taste between it and tap water, those people seriously are not getting it.</description>
+	<statBases>
+      <MarketValue>30.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Puddle</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!--  Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_Plort">
+	<defName>DOOR_Plort</defName>
+	<label>plort</label>
+	<description> Tabby plorts are a key ingredient in a variety of 'performance enhancing' products that grant the consumer a surge of the tabby slime's signature energy and exuberance. And while athletes the world over take them to gain an edge, prolonged use often results in 'uncontrollable butt wiggles,' another (less desirable) signature of the tabby slime.</description>
+	<statBases>
+      <MarketValue>15.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!-- Rad Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_RadPlort">
+	<defName>DOOR_RadPlort</defName>
+	<label>rad plort</label>
+	<description>Given that raddies are basically mobile batteries, it's no surprise that corporations value rad plorts for their incredible energy-producing capabilities. Most rad plorts get turned into 'plortonium' and everything from the latest holophone to a radwave microcook system runs on the stuff.</description>
+	<statBases>
+      <MarketValue>30.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Rad</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!-- Boom Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_BoomPlort">
+	<defName>DOOR_BoomPlort</defName>
+	<label>boom plort</label>
+	<description>Highly volatile boom plorts have all sorts of applications, including powering rocket thrusters and demolitions. Military organizations value their highly destructive capabilities for 'medical technology and other research.' Imagine that!</description>
+	<statBases>
+      <MarketValue>30.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Boom</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!-- Quantum Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_QuantumPlort">
+	<defName>DOOR_QuantumPlort</defName>
+	<label>quantum plort</label>
+	<description>Quantum plorts are believed by many to hold the secret to infinite resources. Given the quantum slime's ability to change reality, it's theorized that unlocking the potential of quantum plorts would allow for a technology that converges the realities of other entities into our reality and- well basically we're talking about cloning stuff. Infinite energy, chickens, whatever. Probably no harmful side effects to this at all.</description>
+	<statBases>
+      <MarketValue>60.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Quantum</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!-- Mosaic Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_MosaicPlort">
+	<defName>DOOR_MosaicPlort</defName>
+	<label>mosaic plort</label>
+	<description>Mosaic plorts are desired for researching the glass structures within the Glass Desert. Samples of this glass turn brittle when taken from the Far, Far Range, yet interestingly, mosaic plorts seem unaffected by this phenomenon. Almost certainly, this glass is being studied because it's really pretty and not because it can cause devastating solar anomalies.</description>
+	<statBases>
+      <MarketValue>75.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Mosaic</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!-- Dervish Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_DervishPlort">
+	<defName>DOOR_DervishPlort</defName>
+	<label>dervish plort</label>
+	<description>Dervish plorts are a fantastic source of clean energy that helps give turbines and generators an extra boost. They are in constant demand as curiously, there is a finite number of spins stored in every dervish plort.</description>
+	<statBases>
+      <MarketValue>75.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Dervish</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!-- Phosphor Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_PhosphorPlort">
+	<defName>DOOR_PhosphorPlort</defName>
+	<label>phosphor plort</label>
+	<description>The luminescent compound found within phosphor plorts can produce light for over 100 years, making it an incredibly eco-friendly form of illumination on Earth. Cities across the globe are slowly switching over to phosphor lights, saving trillions of gigawatts of energy daily. Plus if you rub the stuff in your hair, it glows and looks really cool.</description>
+	<statBases>
+      <MarketValue>15.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Phosphor</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!-- Crystal Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_CrystalPlort">
+	<defName>DOOR_CrystalPlort</defName>
+	<label>crystal plort</label>
+	<description>Though the crystals produced by a crystal slime are highly unstable, a crystal plort, like all plorts, is far more pure and can be used by slime scientists to engineer a variety of metals that are entirely transparent. This innovation has lead to metropolitan areas on Earth completely transforming visually, allowing more light to reach the streets and the space as a whole a chance to 'breathe.' Architects often describe these transparent metals as 'so totally cooler than normal, boring metals.'</description>
+	<statBases>
+      <MarketValue>60.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Crystal</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!-- QuickSilver Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_QuickSilverPlort">
+	<defName>DOOR_QuickSilverPlort</defName>
+	<label>quicksilver plort</label>
+	<description>Mochi sells quicksilver plorts off-market and little is known about her buyers or their motives.</description>
+	<statBases>
+      <MarketValue>20.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Quicksilver</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!-- Tangle Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_TanglePlort">
+	<defName>DOOR_TanglePlort</defName>
+	<label>tangle plort</label>
+	<description>Despite the troublesome nature of the slimes that create them, tangle plorts have incredibly beneficial agricultural applications. Fertilizers and growth formulas made from tangle plorts are used by farms all across Earth to greatly enhance crop production. It's speculated that the unusually high nutrient count found within tangle plorts that now grow Earth's vegetables results from the tangle slime's incredible appetite for chickens, but that's super gruesome so let's just ignore that.</description>
+	<statBases>
+      <MarketValue>75.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Tangle</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
+<!-- Saber Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_SaberPlort">
+	<defName>DOOR_SaberPlort</defName>
+	<label>saber plort</label>
+	<description>Saber plorts are collected for their historical value, offering a window into the primitive past of the Far, Far Range. Some slime scientists have tried to extract the slime DNA from these plorts in order to recreate a true saber slime, but all have failed. And honestly, that's probably for the better, because as soon as that happens some charming billionaire would be talking about making a whole theme park to view them in captivity and then...</description>
+	<statBases>
+      <MarketValue>60.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Saber</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
 	</graphicData>
 </ThingDef>
