@@ -2,20 +2,30 @@
 <Defs>
 
 	<!--======================================================-->
-	<!--==================== Tabby Slime =====================-->
+	<!--==================== Boom Slime =====================-->
 	<!--======================================================-->
 	
 	<ThingDef ParentName="SlimeThingBase">
-		<defName>DOOR_Tabby_Slime</defName>
-		<label>tabby slime</label>
+		<defName>DOOR_Boom_Slime</defName>
+		<label>boom slime</label>
 		<!--Description taken from https://slimerancher.fandom.com/wiki/Tabby_Slime -->
-		<description>Tabby slimes share many curious similarities to domesticated house cats of Earth. With their perky ears, striped backs, and swaying tails, you'd almost mistake them for a true feline... if they weren't made entirely of gooey slime, of course.</description>
+		<description>Boom slimes are often heard before they're seen. The slime cells of a boom slime are constantly vibrating, causing their slime to increasingly crackle with energy before ultimately exploding. However, the boom slime always comes out unscathed, though always a little dazed. On this rimworld, it has been noticed that boom slimes only utilize their explosive enthusiasm when dying.
+		(RimRancher has taken liberties with this for now;
+		quantum slimes are omnivorous.)</description>
 		<statBases>
 			<MoveSpeed>4.0</MoveSpeed>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef>DOOR_BoomPlort</plortDef>
+				<plortLayIntervalDays>0.25</plortLayIntervalDays>
+			</li>
+		</comps>
 		<race>
-			<body>DOOR_Slime_Cat</body>
+			<body>DOOR_Slime_General</body>
+			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
 			<wildness></wildness>
 			<petness>1.0</petness>
 			<predator>true</predator>
@@ -33,22 +43,23 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>DOOR_Tabby_Slime</defName>
-		<label>Tabby Slime</label>
-		<race>DOOR_Tabby_Slime</race>
+		<defName>DOOR_Boom_Slime</defName>
+		<label>Boom Slime</label>
+		<race>DOOR_Boom_Slime</race>
 		<ecoSystemWeight>0.1</ecoSystemWeight>
 		<combatPower>0.2</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Resource/Slime/Tabby_Slime/Tabby_Slime</texPath>
-					<drawSize>1.0</drawSize>
+					<texPath>Things/Resource/Slime/Boom_Slime/Boom_Slime</texPath>
+					<drawSize>0.7</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
-					<drawSize>1.0</drawSize>
+					<drawSize>0.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	
 </Defs>

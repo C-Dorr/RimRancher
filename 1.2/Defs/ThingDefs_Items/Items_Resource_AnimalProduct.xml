@@ -54,20 +54,6 @@
 	</graphicData>
 </ThingDef>
 
-<!--  Plort -->
-<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_Plort">
-	<defName>DOOR_Plort</defName>
-	<label>plort</label>
-	<description> Tabby plorts are a key ingredient in a variety of 'performance enhancing' products that grant the consumer a surge of the tabby slime's signature energy and exuberance. And while athletes the world over take them to gain an edge, prolonged use often results in 'uncontrollable butt wiggles,' another (less desirable) signature of the tabby slime.</description>
-	<statBases>
-      <MarketValue>15.0</MarketValue>
-    </statBases>
-	<graphicData>
-		<texPath>Things/Resource/SlimeProduct/</texPath>
-		<graphicClass>Graphic_StackCount</graphicClass>
-	</graphicData>
-</ThingDef>
-
 <!-- Hunter Plort -->
 <ThingDef ParentName="DOOR_PlortBase" Name="DOOR_HunterPlort">
 	<defName>DOOR_HunterPlort</defName>
@@ -108,20 +94,6 @@
     </statBases>
 	<graphicData>
 		<texPath>Things/Resource/SlimeProduct/Puddle</texPath>
-		<graphicClass>Graphic_StackCount</graphicClass>
-	</graphicData>
-</ThingDef>
-
-<!--  Plort -->
-<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_Plort">
-	<defName>DOOR_Plort</defName>
-	<label>plort</label>
-	<description> Tabby plorts are a key ingredient in a variety of 'performance enhancing' products that grant the consumer a surge of the tabby slime's signature energy and exuberance. And while athletes the world over take them to gain an edge, prolonged use often results in 'uncontrollable butt wiggles,' another (less desirable) signature of the tabby slime.</description>
-	<statBases>
-      <MarketValue>15.0</MarketValue>
-    </statBases>
-	<graphicData>
-		<texPath>Things/Resource/SlimeProduct/</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
 	</graphicData>
 </ThingDef>

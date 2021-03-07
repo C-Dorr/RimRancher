@@ -23,17 +23,9 @@
 		</comps>
 		<race>
 			<body>DOOR_Slime_General</body>
-			<petness>3.0</petness>
+			<petness>1.0</petness>
 			<predator>false</predator>
 			<foodType>OmnivoreAnimal</foodType>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1)</li>
-					<li>(2.5, 0)</li>
-				</points>
-			</litterSizeCurve>
 		</race>
 	</ThingDef>
 
@@ -57,4 +49,334 @@
 		</lifeStages>
 	</PawnKindDef>
 
+<!--======================================================-->
+<!--===================== Puddle Slime ===================-->
+<!--======================================================-->
+
+<ThingDef ParentName="SlimeThingBase">
+		<defName>DOOR_Puddle_Slime</defName>
+		<label>puddle slime</label>
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Pink_Slime -->
+		<description>Puddle slimes are a rare species of slime that live in fresh water pools found on the range. These slimes don't eat fruits, veggies, or meat like most other slimes. Instead, puddle slimes absorb water into their bodies while they sit on the surface of a pool.Puddle slimes need fresh water to survive and will quickly evaporate if left on any other surface for too long. (RimRancher has taken liberties with this as of now; puddle slimes do not need water to survive and are omnivorous.)</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef>DOOR_PuddlePlort</plortDef>
+				<plortLayIntervalDays>0.25</plortLayIntervalDays>
+			</li>
+		</comps>
+		<race>
+			<body>DOOR_Slime_General</body>
+			<petness>1.0</petness>
+			<predator>false</predator>
+			<foodType>OmnivoreAnimal</foodType>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DOOR_Puddle_Slime</defName>
+		<label>Puddle Slime</label>
+		<race>DOOR_Puddle_Slime</race>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>0.0</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Resource/Slime/Puddle_Slime/Puddle_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+<!--======================================================-->
+<!--=================== Phosphor Slime ===================-->
+<!--======================================================-->
+<ThingDef ParentName="SlimeThingBase">
+		<defName>DOOR_Phosphor_Slime</defName>
+		<label>phosphor slime</label>
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Pink_Slime -->
+		<description>Phosphor slimes come out at night, flying about the moonlit range upon their translucent wings. Phosphor slimes have a luminescent slime core that pulses with a soft glow, making them easy to spot. It's for this reason ranchers sometimes refer to them as 'low stars'. (RimRancher has taken liberties with this for now;
+		phosphor slimes are omnivorous.)
+		</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef>DOOR_PhosphorPlort</plortDef>
+				<plortLayIntervalDays>0.25</plortLayIntervalDays>
+			</li>
+		</comps>
+		<race>
+			<body>DOOR_Slime_General</body>
+			<petness>1.0</petness>
+			<predator>false</predator>
+			<foodType>OmnivoreAnimal</foodType>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DOOR_Phosphor_Slime</defName>
+		<label>Phosphor Slime</label>
+		<race>DOOR_Phosphor_Slime</race>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>0.0</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Resource/Slime/Phosphor_Slime/Phosphor_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!--======================================================-->
+	<!--==================== Tabby Slime =====================-->
+	<!--======================================================-->
+	
+	<ThingDef ParentName="SlimeThingBase">
+		<defName>DOOR_Tabby_Slime</defName>
+		<label>tabby slime</label>
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Tabby_Slime -->
+		<description>Tabby slimes share many curious similarities to domesticated house cats of Earth. With their perky ears, striped backs, and swaying tails, you'd almost mistake them for a true feline... if they weren't made entirely of gooey slime, of course.</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef>DOOR_TabbyPlort</plortDef>
+				<plortLayIntervalDays>0.25</plortLayIntervalDays>
+			</li>
+		</comps>
+		<race>
+			<body>DOOR_Slime_Cat</body>
+			<wildness></wildness>
+			<petness>1.0</petness>
+			<predator>true</predator>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<foodType>CarnivoreAnimal</foodType>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1)</li>
+					<li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DOOR_Tabby_Slime</defName>
+		<label>Tabby Slime</label>
+		<race>DOOR_Tabby_Slime</race>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>0.2</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Resource/Slime/Tabby_Slime/Tabby_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!--======================================================-->
+	<!--==================== Honey Slime =====================-->
+	<!--======================================================-->
+	
+	<ThingDef ParentName="SlimeThingBase">
+		<defName>DOOR_Honey_Slime</defName>
+		<label>honey slime</label>
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Tabby_Slime -->
+		<description>Honey slimes are an odd breed of slime composed of a hyper-sweet slime compound. Most slime scientists believe this to be the result of their slime cells replicating the natural sugars found in the fruits and floral nectars of the Far, Far Range. Most ranchers agree their plorts taste great on cereal. (RimRancher has taken liberties with this for now;
+		honey slimes are omnivorous.)</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef>DOOR_HoneyPlort</plortDef>
+				<plortLayIntervalDays>0.25</plortLayIntervalDays>
+			</li>
+		</comps>
+		<race>
+			<body>DOOR_Slime_Topped</body>
+			<wildness></wildness>
+			<petness>1.0</petness>
+			<predator>true</predator>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<foodType>OmnivoreAnimal</foodType>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1)</li>
+					<li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DOOR_Honey_Slime</defName>
+		<label>Honey Slime</label>
+		<race>DOOR_Honey_Slime</race>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>0.2</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Resource/Slime/Honey_Slime/Honey_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!--======================================================-->
+	<!--==================== Hunter Slime =====================-->
+	<!--======================================================-->
+	
+	<ThingDef ParentName="SlimeThingBase">
+		<defName>DOOR_Hunter_Slime</defName>
+		<label>hunter slime</label>
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Tabby_Slime -->
+		<description>The Hunter Slime is the wild cousin of the tabby slime. A much more capable creature than the playful tabbies, the hunter slime excels at stalking the chickens of the Far, Far Range. A hunter slime's slimological makeup allows for a natural cloaking ability that renders it almost completely invisible. Their only tell is in their giant, almond eyes, which can often be seen hovering in the dark. This effect is often described by unsuspecting ranchers as 'aaaahhhhHHH!'</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef>DOOR_HunterPlort</plortDef>
+				<plortLayIntervalDays>0.25</plortLayIntervalDays>
+			</li>
+		</comps>
+		<race>
+			<body>DOOR_Slime_Cat</body>
+			<wildness></wildness>
+			<petness>1.0</petness>
+			<predator>true</predator>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<foodType>CarnivoreAnimal</foodType>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1)</li>
+					<li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DOOR_Hunter_Slime</defName>
+		<label>Hunter Slime</label>
+		<race>DOOR_Hunter_Slime</race>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>0.2</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Resource/Slime/Hunter_Slime/Hunter_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!--======================================================-->
+	<!--==================== Quantum Slime =====================-->
+	<!--======================================================-->
+	
+	<ThingDef ParentName="SlimeThingBase">
+		<defName>DOOR_Quantum_Slime</defName>
+		<label>quantum slime</label>
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Tabby_Slime -->
+		<description>Quantum Slimes appear to have resulted from some sort of event that took place in the Ancient Ruins long ago. At all times, the quantum slime is capable of emitting other possible realities of their being. Called 'ghosts', these other realities can come true, with the quantum slime aligning with the reality of the ghost, effectively teleporting. s(RimRancher has taken liberties with this for now;
+		quantum slimes are omnivorous.)</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef>DOOR_QuantumPlort</plortDef>
+				<plortLayIntervalDays>0.25</plortLayIntervalDays>
+			</li>
+		</comps>
+		<race>
+			<body>DOOR_Slime_General</body>
+			<wildness></wildness>
+			<petness>1.0</petness>
+			<predator>true</predator>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<foodType>OmnivoreAnimal</foodType>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1)</li>
+					<li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DOOR_Quantum_Slime</defName>
+		<label>Quantum Slime</label>
+		<race>DOOR_Quantum_Slime</race>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>0.2</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Resource/Slime/Quantum_Slime/Quantum_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 </Defs>
