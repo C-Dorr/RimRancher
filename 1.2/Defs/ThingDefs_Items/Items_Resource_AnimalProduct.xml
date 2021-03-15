@@ -224,18 +224,4 @@
 	</graphicData>
 </ThingDef>
 
-<!-- Saber Plort -->
-<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_SaberPlort">
-	<defName>DOOR_SaberPlort</defName>
-	<label>saber plort</label>
-	<description>Saber plorts are collected for their historical value, offering a window into the primitive past of the Far, Far Range. Some slime scientists have tried to extract the slime DNA from these plorts in order to recreate a true saber slime, but all have failed. And honestly, that's probably for the better, because as soon as that happens some charming billionaire would be talking about making a whole theme park to view them in captivity and then...</description>
-	<statBases>
-      <MarketValue>60.0</MarketValue>
-    </statBases>
-	<graphicData>
-		<texPath>Things/Resource/SlimeProduct/Saber</texPath>
-		<graphicClass>Graphic_StackCount</graphicClass>
-	</graphicData>
-</ThingDef>
-
 </Defs>

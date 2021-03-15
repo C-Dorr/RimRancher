@@ -168,7 +168,7 @@
 		</comps>
 		<race>
 			<body>DOOR_Slime_Cat</body>
-			<wildness></wildness>
+			<wildness>0</wildness>
 			<petness>1.0</petness>
 			<predator>true</predator>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
@@ -227,7 +227,7 @@
 		</comps>
 		<race>
 			<body>DOOR_Slime_Topped</body>
-			<wildness></wildness>
+			<wildness>0</wildness>
 			<petness>1.0</petness>
 			<predator>true</predator>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
@@ -285,7 +285,7 @@
 		</comps>
 		<race>
 			<body>DOOR_Slime_Cat</body>
-			<wildness></wildness>
+			<wildness>0</wildness>
 			<petness>1.0</petness>
 			<predator>true</predator>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
@@ -329,7 +329,7 @@
 		<defName>DOOR_Quantum_Slime</defName>
 		<label>quantum slime</label>
 		<!--Description taken from https://slimerancher.fandom.com/wiki/Tabby_Slime -->
-		<description>Quantum Slimes appear to have resulted from some sort of event that took place in the Ancient Ruins long ago. At all times, the quantum slime is capable of emitting other possible realities of their being. Called 'ghosts', these other realities can come true, with the quantum slime aligning with the reality of the ghost, effectively teleporting. s(RimRancher has taken liberties with this for now;
+		<description>Quantum Slimes appear to have resulted from some sort of event that took place in the Ancient Ruins long ago. At all times, the quantum slime is capable of emitting other possible realities of their being. Called 'ghosts', these other realities can come true, with the quantum slime aligning with the reality of the ghost, effectively teleporting. (RimRancher has taken liberties with this for now;
 		quantum slimes are omnivorous.)</description>
 		<statBases>
 			<MoveSpeed>4.0</MoveSpeed>
@@ -344,7 +344,7 @@
 		</comps>
 		<race>
 			<body>DOOR_Slime_General</body>
-			<wildness></wildness>
+			<wildness>0</wildness>
 			<petness>1.0</petness>
 			<predator>true</predator>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
@@ -370,6 +370,124 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Resource/Slime/Quantum_Slime/Quantum_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!--======================================================-->
+	<!--==================== Dervish Slime =====================-->
+	<!--======================================================-->
+	
+	<ThingDef ParentName="SlimeThingBase">
+		<defName>DOOR_Dervish_Slime</defName>
+		<label>dervish slime</label>
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Dervish_Slime -->
+		<description>A dervish slime is a swirling, whirling bundle of energy in slimy form. Dervish slimes are commonly found in the Glass Desert, cruising across its dusty dunes at high speed atop little whirlwinds. One thing is for certain: wherever the dervish slime needs to go, it gets there in a hurry. (RimRancher has taken liberties with this for now;
+		Dervish slimes are omnivorous.)</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef>DOOR_DervishPlort</plortDef>
+				<plortLayIntervalDays>0.25</plortLayIntervalDays>
+			</li>
+		</comps>
+		<race>
+			<body>DOOR_Slime_General</body>
+			<wildness>0</wildness>
+			<petness>1.0</petness>
+			<predator>true</predator>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<foodType>OmnivoreAnimal</foodType>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1)</li>
+					<li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DOOR_Dervish_Slime</defName>
+		<label>Mosaic Slime</label>
+		<race>DOOR_Dervish_Slime</race>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>0.2</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Resource/Slime/Dervish_Slime/Dervish_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+	<!--======================================================-->
+	<!--==================== Tangle Slime =====================-->
+	<!--======================================================-->
+	
+	<ThingDef ParentName="SlimeThingBase">
+		<defName>DOOR_Tangle_Slime</defName>
+		<label>Tangle slime</label>
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Tangle_Slime -->
+		<description>Though the tangle slime may look innocent with its wide smile and colorful flower atop its head, it's actually a fearsome predator with a big appetite for tasty meat. The tangle slime earned its name from the twisting vines that it can produce to grab things in the environment. It's unknown what caused the tangle slime to become such a fearsome predator in the barren wastes of the Glass Desert. However, if the land once resembled the lush greenery of the oases within, perhaps the tangle slime evolved in a much different environment than what you see today.</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef>DOOR_TanglePlort</plortDef>
+				<plortLayIntervalDays>0.25</plortLayIntervalDays>
+			</li>
+		</comps>
+		<race>
+			<body>DOOR_Slime_Topped</body>
+			<wildness>0</wildness>
+			<petness>1.0</petness>
+			<predator>true</predator>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<foodType>CarnivoreAnimal</foodType>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1)</li>
+					<li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DOOR_Tangle_Slime</defName>
+		<label>Tangle Slime</label>
+		<race>DOOR_Tangle_Slime</race>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>0.2</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Resource/Slime/Tangle_Slime/Tangle_Slime</texPath>
 					<drawSize>0.7</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>

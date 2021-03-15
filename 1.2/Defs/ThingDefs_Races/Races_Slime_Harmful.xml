@@ -8,7 +8,7 @@
 	<ThingDef ParentName="SlimeThingBase">
 		<defName>DOOR_Boom_Slime</defName>
 		<label>boom slime</label>
-		<!--Description taken from https://slimerancher.fandom.com/wiki/Tabby_Slime -->
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Boom_Slime -->
 		<description>Boom slimes are often heard before they're seen. The slime cells of a boom slime are constantly vibrating, causing their slime to increasingly crackle with energy before ultimately exploding. However, the boom slime always comes out unscathed, though always a little dazed. On this rimworld, it has been noticed that boom slimes only utilize their explosive enthusiasm when dying.
 		(RimRancher has taken liberties with this for now;
 		quantum slimes are omnivorous.)</description>
@@ -26,7 +26,7 @@
 		<race>
 			<body>DOOR_Slime_General</body>
 			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
-			<wildness></wildness>
+			<wildness>0</wildness>
 			<petness>1.0</petness>
 			<predator>true</predator>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
@@ -62,4 +62,353 @@
 		</lifeStages>
 	</PawnKindDef>
 	
+	<!--======================================================-->
+	<!--==================== Rock Slime =====================-->
+	<!--======================================================-->
+	
+	<ThingDef ParentName="SlimeThingBase">
+		<defName>DOOR_Rock_Slime</defName>
+		<label>rock slime</label>
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Rock_Slime -->
+		<description>Rock slimes earned their name from the rocky crown of sharp spikes atop their slimy bodies. But their affection for minerals doesn't end with their appearance: rock slimes are strict vegetarians, favoring the satisfying crunch of the heart beet most of all.</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef>DOOR_RockPlort</plortDef>
+				<plortLayIntervalDays>0.25</plortLayIntervalDays>
+			</li>
+		</comps>
+		<race>
+			<body>DOOR_Slime_Topped</body>
+			
+			<wildness>0</wildness>
+			<petness>1.0</petness>
+			<predator>true</predator>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<foodType>VegetarianAnimal</foodType>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1)</li>
+					<li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DOOR_Rock_Slime</defName>
+		<label>Rock Slime</label>
+		<race>DOOR_Rock_Slime</race>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>0.2</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Resource/Slime/Rock_Slime/Rock_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	
+	<!--======================================================-->
+	<!--==================== Rad Slime =====================-->
+	<!--======================================================-->
+	
+	<ThingDef ParentName="SlimeThingBase">
+		<defName>DOOR_Rad_Slime</defName>
+		<label>rad slime</label>
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Rad_Slime -->
+		<description>It's unknown if rad slimes, sometimes called 'raddies,' came to be from external radiation sources or from something naturally occurring within the Far, Far Range. Regardless, rad slimes emit such a potent aura of radiation they glow in the dark!</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef>DOOR_RadPlort</plortDef>
+				<plortLayIntervalDays>0.25</plortLayIntervalDays>
+			</li>
+		</comps>
+		<race>
+			<body>DOOR_Slime_General</body>
+			<wildness>0</wildness>
+			<petness>1.0</petness>
+			<predator>true</predator>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<foodType>VegetarianAnimal</foodType>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1)</li>
+					<li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DOOR_Rad_Slime</defName>
+		<label>Rad Slime</label>
+		<race>DOOR_Rad_Slime</race>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>0.2</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Resource/Slime/Rad_Slime/Rad_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!--======================================================-->
+	<!--==================== Mosaic Slime =====================-->
+	<!--======================================================-->
+	
+	<ThingDef ParentName="SlimeThingBase">
+		<defName>DOOR_Mosaic_Slime</defName>
+		<label>mosaic slime</label>
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Mosaic_Slime -->
+		<description>The mosaic slime gets its name from the glittering array of glass tiles that cover its body. This glass produces a similar anomaly found in the desert itself, making the mosaic slime beautiful, but quite dangerous.</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef>DOOR_MosaicPlort</plortDef>
+				<plortLayIntervalDays>0.25</plortLayIntervalDays>
+			</li>
+		</comps>
+		<race>
+			<body>DOOR_Slime_General</body>
+			<wildness>0</wildness>
+			<petness>1.0</petness>
+			<predator>true</predator>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<foodType>VegetarianAnimal</foodType>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1)</li>
+					<li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DOOR_Mosaic_Slime</defName>
+		<label>Mosaic Slime</label>
+		<race>DOOR_Mosaic_Slime</race>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>0.2</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Resource/Slime/Mosaic_Slime/Mosaic_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!--======================================================-->
+	<!--==================== Quicksilver Slime =====================-->
+	<!--======================================================-->
+	
+	<ThingDef ParentName="SlimeThingBase">
+		<defName>DOOR_Quicksilver_Slime</defName>
+		<label>quicksilver slime</label>
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Quicksilver_Slime -->
+		<description>Quicksilver slimes are among the rarest slimes on the Far, Far Range, thanks in large part to their only known habitat being owned exclusively by Mochi Miles. Quicksilver slimes are lightning quick, and feed on electricity. This is generally accomplished by their moving really fast and slowly accumulating the static charge they generate. However, Mochi has decided to speed up the process and created a method for feeding them energy in a far more direct fashion. (RimRancher has taken liberties with this: Quicksilver Slimes are currently omnivorous)</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef>DOOR_QuickSilverPlort</plortDef>
+				<plortLayIntervalDays>0.25</plortLayIntervalDays>
+			</li>
+		</comps>
+		<race>
+			<body>DOOR_Slime_Topped</body>
+			<wildness>0</wildness>
+			<petness>1.0</petness>
+			<predator>true</predator>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<foodType>OmnivoreAnimal</foodType>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1)</li>
+					<li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DOOR_Quicksilver_Slime</defName>
+		<label>Quicksilver Slime</label>
+		<race>DOOR_Quicksliver_Slime</race>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>0.2</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Resource/Slime/Quicksilver_Slime/Quicksilver_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<!--======================================================-->
+	<!--==================== Fire Slime =====================-->
+	<!--======================================================-->
+	
+	<ThingDef ParentName="SlimeThingBase">
+		<defName>DOOR_Fire_Slime</defName>
+		<label>fire slime</label>
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Fire_Slime -->
+		<description>Fire slimes are a rare breed of slime that lives on ash. Fire slimes will eat just about any food, but not without it being burned into ash first. The only way to feed a fire slime is to use an incinerator with an ash trough upgrade. Fire slimes need ash to survive and will quickly snuff out if left on any other surface for too long. When keeping fire slimes in an ash trough, simply burn any food item to produce some ash and fill the trough. (RimRancher is currently taking liberties; fire slimes are currently omnivorous)</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef>DOOR_FirePlort</plortDef>
+				<plortLayIntervalDays>0.25</plortLayIntervalDays>
+			</li>
+		</comps>
+		<race>
+			<body>DOOR_Slime_General</body>
+			<wildness>0</wildness>
+			<petness>1.0</petness>
+			<predator>true</predator>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<foodType>VegetarianAnimal</foodType>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1)</li>
+					<li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DOOR_Fire_Slime</defName>
+		<label>Fire Slime</label>
+		<race>DOOR_Fire_Slime</race>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>0.2</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Resource/Slime/Fire_Slime/Fire_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!--======================================================-->
+	<!--==================== Crystal Slime =====================-->
+	<!--======================================================-->
+	
+	<ThingDef ParentName="SlimeThingBase">
+		<defName>DOOR_Crystal_Slime</defName>
+		<label>crystal slime</label>
+		<!--Description taken from https://slimerancher.fandom.com/wiki/Crystal_Slime -->
+		<description>Believed to be a cousin of the rock slime, the crystal slime is covered in a crown of shimmering, crystal spikes. These spikes seem to form from the crystal slime generating a tremendous amount of internal heat and warping the minerals around them; a truly alien behavior.</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_PlortLayer">
+				<plortCountRange>1</plortCountRange>
+				<plortDef>DOOR_CrystalPlort</plortDef>
+				<plortLayIntervalDays>0.25</plortLayIntervalDays>
+			</li>
+		</comps>
+		<race>
+			<body>DOOR_Slime_Topped</body>
+			<wildness>0</wildness>
+			<petness>1.0</petness>
+			<predator>true</predator>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<foodType>VegetarianAnimal</foodType>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1)</li>
+					<li>(2.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+		</race>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DOOR_Crystal_Slime</defName>
+		<label>Crystal Slime</label>
+		<race>DOOR_Crystal_Slime</race>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>0.2</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Resource/Slime/Crystal_Slime/Crystal_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Resource/Slime/Dessicated_Slime</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 </Defs>
