@@ -279,7 +279,7 @@
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>DOOR_Quicksilver_Slime</defName>
 		<label>Quicksilver Slime</label>
-		<race>DOOR_Quicksliver_Slime</race>
+		<race>DOOR_Quicksilver_Slime</race>
 		<ecoSystemWeight>0.1</ecoSystemWeight>
 		<combatPower>0.2</combatPower>
 		<lifeStages>

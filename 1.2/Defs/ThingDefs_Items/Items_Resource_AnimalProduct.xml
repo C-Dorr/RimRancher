@@ -224,4 +224,19 @@
 	</graphicData>
 </ThingDef>
 
+
+<!-- Tangle Plort -->
+<ThingDef ParentName="DOOR_PlortBase" Name="DOOR_FirePlort">
+	<defName>DOOR_FirePlort</defName>
+	<label>fire plort</label>
+	<description>Fire plorts are used in the developing world on Earth to keep stoves and fireplaces burning. Thanks to fire plorts, warm hands and hot food is a possibility for millions of people who otherwise would not have access to such luxuries. A rancher won't get rich selling fire plorts, and certainly managing them can be a dangerous endeavor, but they should know that the sale of each helps those in need. Now and far into the future, the little noble actions of every individual help us move forward as a people. That much will never change.</description>
+	<statBases>
+      <MarketValue>50.0</MarketValue>
+    </statBases>
+	<graphicData>
+		<texPath>Things/Resource/SlimeProduct/Fire</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+</ThingDef>
+
 </Defs>
