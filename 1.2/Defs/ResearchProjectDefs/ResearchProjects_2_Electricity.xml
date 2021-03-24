@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>SlimeScience</defName>
+    <label>slime science</label>
+    <description>Discover the science used by Ranchers on the Far Far Range</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>4.10</researchViewY>
+    <prerequisites>
+      <li>Electricity</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+</Defs>

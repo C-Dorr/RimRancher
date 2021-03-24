@@ -7,4 +7,8 @@
 	</supportedVersions>
 	<description>RimRancher v0.0.1\n\nSlimeRancher in RimWorld. v0.1 Contains broken versions of Pink and Tabby Slimes. Trello Board to come.\n\nSlimeRancher is a wonderful game developed and published by Monomi Park.\n@monomipark on Twitter \nmonomipark.com\nslimerancher.com \nSteam Page: https://store.steampowered.com/app/433340/Slime_Rancher/\n\nHuge shoutout to the Vanilla Animals Expanded -- Endangered Mod (https://steamcommunity.com/sharedfiles/filedetails/?id=2366589898). As my first mod, their work came in very handy providing a straigtforward mod that was easier to understand than the Rimworld Core definitions and types. </description>
 	<!--url>https://steamcommunity.com/id/Door/myworkshopfiles/?appid=294100</url-->
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+	</loadAfter>
 </ModMetaData>

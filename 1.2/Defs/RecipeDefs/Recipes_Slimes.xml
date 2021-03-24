@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="DOOR_ProduceSlimeBase" Abstract="True">
+    <jobString>Cloning slime from plorts.</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <effectWorking>Surgery</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <skillRequirements>
+      <Intellectual>10</Intellectual>
+    </skillRequirements>
+    <researchPrerequisite>SlimeScience</researchPrerequisite>
+    <recipeUsers>
+      <li>DOOR_SlimeReproductionMachine</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef ParentName="DOOR_ProduceSlimeBase">
+    <defName>DOOR_MakePink</defName>
+    <label>create a pink slime</label>
+    <description>Extract and use Pink Slime DNA to make a new Pink Slime.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DOOR_PinkPlort</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <DOOR_Pink_Spawner>1</DOOR_Pink_Spawner>
+    </products>
+  </RecipeDef>
+
+</Defs>

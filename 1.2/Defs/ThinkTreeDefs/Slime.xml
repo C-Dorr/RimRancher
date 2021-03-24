@@ -123,7 +123,7 @@
         </li>
 
         <!-- Lay eggs you need to -->
-        <li Class="JobGiver_LayPlort" />
+        <li Class="RimRancher.JobGiver_LayPlort" />
 
         <!-- Tame animal -->
         <li Class="ThinkNode_ConditionalOfPlayerFaction">

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<WorkGiverDef>
+    <defName>DOOR_DoBillsSlimeReproduction</defName>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Research</workType>
+    <priorityInType>10</priorityInType>
+    <fixedBillGiverDefs>
+      <li>DOOR_SlimeReproductionMachine</li>
+    </fixedBillGiverDefs>
+    <verb>reproduce</verb>
+    <gerund>reproducing</gerund>
+  </WorkGiverDef>
+</Defs>

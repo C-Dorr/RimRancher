@@ -3,7 +3,7 @@
 
   <JobDef>
     <defName>LayPlort</defName>
-    <driverClass>JobDriver_LayPlort</driverClass>
+    <driverClass>RimRancher.JobDriver_LayPlort</driverClass>
     <reportString>plorting.</reportString>
     <casualInterruptible>false</casualInterruptible>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>

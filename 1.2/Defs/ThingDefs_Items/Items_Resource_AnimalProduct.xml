@@ -10,6 +10,11 @@
 		<DeteriorationRate>0.5</DeteriorationRate>
 		<Flammability>0.1</Flammability>
 	</statBases>
+	<stuffProps>
+      <categories>
+        <li>DOOR_PlortCategory</li>
+      </categories>
+  </stuffProps>
 </ThingDef>
 
 <!-- Pink Plort -->

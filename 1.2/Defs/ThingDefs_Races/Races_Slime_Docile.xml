@@ -15,7 +15,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_PlortLayer">
+			<li Class="RimRancher.CompProperties_PlortLayer">
 				<plortCountRange>1</plortCountRange>
 				<plortDef>DOOR_PinkPlort</plortDef>
 				<plortLayIntervalDays>0.25</plortLayIntervalDays>
@@ -63,7 +63,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_PlortLayer">
+			<li Class="RimRancher.CompProperties_PlortLayer">
 				<plortCountRange>1</plortCountRange>
 				<plortDef>DOOR_PuddlePlort</plortDef>
 				<plortLayIntervalDays>0.25</plortLayIntervalDays>
@@ -112,7 +112,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_PlortLayer">
+			<li Class="RimRancher.CompProperties_PlortLayer">
 				<plortCountRange>1</plortCountRange>
 				<plortDef>DOOR_PhosphorPlort</plortDef>
 				<plortLayIntervalDays>0.25</plortLayIntervalDays>
@@ -160,7 +160,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_PlortLayer">
+			<li Class="RimRancher.CompProperties_PlortLayer">
 				<plortCountRange>1</plortCountRange>
 				<plortDef>DOOR_TabbyPlort</plortDef>
 				<plortLayIntervalDays>0.25</plortLayIntervalDays>
@@ -219,7 +219,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_PlortLayer">
+			<li Class="RimRancher.CompProperties_PlortLayer">
 				<plortCountRange>1</plortCountRange>
 				<plortDef>DOOR_HoneyPlort</plortDef>
 				<plortLayIntervalDays>0.25</plortLayIntervalDays>
@@ -277,7 +277,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_PlortLayer">
+			<li Class="RimRancher.CompProperties_PlortLayer">
 				<plortCountRange>1</plortCountRange>
 				<plortDef>DOOR_HunterPlort</plortDef>
 				<plortLayIntervalDays>0.25</plortLayIntervalDays>
@@ -336,7 +336,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_PlortLayer">
+			<li Class="RimRancher.CompProperties_PlortLayer">
 				<plortCountRange>1</plortCountRange>
 				<plortDef>DOOR_QuantumPlort</plortDef>
 				<plortLayIntervalDays>0.25</plortLayIntervalDays>
@@ -395,7 +395,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_PlortLayer">
+			<li Class="RimRancher.CompProperties_PlortLayer">
 				<plortCountRange>1</plortCountRange>
 				<plortDef>DOOR_DervishPlort</plortDef>
 				<plortLayIntervalDays>0.25</plortLayIntervalDays>
@@ -454,7 +454,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_PlortLayer">
+			<li Class="RimRancher.CompProperties_PlortLayer">
 				<plortCountRange>1</plortCountRange>
 				<plortDef>DOOR_TanglePlort</plortDef>
 				<plortLayIntervalDays>0.25</plortLayIntervalDays>

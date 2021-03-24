@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+<ThingDef ParentName="EggFertBase">
+	<defName>DOOR_Pink_Spawner</defName>
+  	<label>pink spawner</label>
+  	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+		<texPath>Things/Resource/SpawnSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<comps>
+		<li Class="CompProperties_Hatcher">
+	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
+        	<hatcherPawn>DOOR_Pink_Slime</hatcherPawn>
+        </li>
+	</comps>
+</ThingDef>
+
+</Defs>
