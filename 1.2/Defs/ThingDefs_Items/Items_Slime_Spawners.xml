@@ -2,18 +2,204 @@
 
 <Defs>
 
-<ThingDef ParentName="EggFertBase">
-	<defName>DOOR_Pink_Spawner</defName>
-  	<label>pink spawner</label>
-  	<thingClass>ThingWithComps</thingClass>
+<ThingDef Abstract="True" ParentName="EggFertBase">
+	<defName>DOOR_Spawner_Base</defName>
+	<thingClass>ThingWithComps</thingClass>
 	<graphicData>
 		<texPath>Things/Resource/SpawnSquare</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+</ThingDef>
+
+<!-- PINK -->
+<ThingDef ParentName="DOOR_Spawner_Base">
+	<defName>DOOR_Pink_Spawner</defName>
+  	<label>pink spawner</label>
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
         	<hatcherPawn>DOOR_Pink_Slime</hatcherPawn>
+        </li>
+	</comps>
+</ThingDef>
+
+
+<!-- Puddle -->
+<ThingDef ParentName="DOOR_Spawner_Base">
+	<defName>DOOR_Puddle_Spawner</defName>
+  	<label>puddle spawner</label>
+	<comps>
+		<li Class="CompProperties_Hatcher">
+	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
+        	<hatcherPawn>DOOR_Puddle_Slime</hatcherPawn>
+        </li>
+	</comps>
+</ThingDef>
+
+<!-- Phosphor -->
+<ThingDef ParentName="DOOR_Spawner_Base">
+	<defName>DOOR_Phosphor_Spawner</defName>
+  	<label>phosphor spawner</label>
+	<comps>
+		<li Class="CompProperties_Hatcher">
+	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
+        	<hatcherPawn>DOOR_Phosphor_Slime</hatcherPawn>
+        </li>
+	</comps>
+</ThingDef>
+
+<!-- Tabby -->
+<ThingDef ParentName="DOOR_Spawner_Base">
+	<defName>DOOR_Tabby_Spawner</defName>
+  	<label>tabby spawner</label>
+	<comps>
+		<li Class="CompProperties_Hatcher">
+	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
+        	<hatcherPawn>DOOR_Tabby_Slime</hatcherPawn>
+        </li>
+	</comps>
+</ThingDef>
+
+<!-- Honey -->
+<ThingDef ParentName="DOOR_Spawner_Base">
+	<defName>DOOR_Honey_Spawner</defName>
+  	<label>honey spawner</label>
+	<comps>
+		<li Class="CompProperties_Hatcher">
+	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
+        	<hatcherPawn>DOOR_Honey_Slime</hatcherPawn>
+        </li>
+	</comps>
+</ThingDef>
+
+<!-- Hunter -->
+<ThingDef ParentName="DOOR_Spawner_Base">
+	<defName>DOOR_Hunter_Spawner</defName>
+  	<label>hunter spawner</label>
+	<comps>
+		<li Class="CompProperties_Hatcher">
+	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
+        	<hatcherPawn>DOOR_Hunter_Slime</hatcherPawn>
+        </li>
+	</comps>
+</ThingDef>
+
+<!-- Quantum -->
+<ThingDef ParentName="DOOR_Spawner_Base">
+	<defName>DOOR_Quantum_Spawner</defName>
+  	<label>quantum spawner</label>
+	<comps>
+		<li Class="CompProperties_Hatcher">
+	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
+        	<hatcherPawn>DOOR_Quantum_Slime</hatcherPawn>
+        </li>
+	</comps>
+</ThingDef>
+
+<!-- Dervish -->
+<ThingDef ParentName="DOOR_Spawner_Base">
+	<defName>DOOR_Dervish_Spawner</defName>
+  	<label>dervish spawner</label>
+	<comps>
+		<li Class="CompProperties_Hatcher">
+	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
+        	<hatcherPawn>DOOR_Dervish_Slime</hatcherPawn>
+        </li>
+	</comps>
+</ThingDef>
+
+<!-- Tangle -->
+<ThingDef ParentName="DOOR_Spawner_Base">
+	<defName>DOOR_Tangle_Spawner</defName>
+  	<label>tangle spawner</label>
+	<comps>
+		<li Class="CompProperties_Hatcher">
+	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
+        	<hatcherPawn>DOOR_Tangle_Slime</hatcherPawn>
+        </li>
+	</comps>
+</ThingDef>
+
+<!-- Boom -->
+<ThingDef ParentName="DOOR_Spawner_Base">
+	<defName>DOOR_Boom_Spawner</defName>
+  	<label>boom spawner</label>
+	<comps>
+		<li Class="CompProperties_Hatcher">
+	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
+        	<hatcherPawn>DOOR_Boom_Slime</hatcherPawn>
+        </li>
+	</comps>
+</ThingDef>
+
+<!-- Rock -->
+<ThingDef ParentName="DOOR_Spawner_Base">
+	<defName>DOOR_Rock_Spawner</defName>
+  	<label>rock spawner</label>
+	<comps>
+		<li Class="CompProperties_Hatcher">
+	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
+        	<hatcherPawn>DOOR_Rock_Slime</hatcherPawn>
+        </li>
+	</comps>
+</ThingDef>
+
+<!-- Rad -->
+<ThingDef ParentName="DOOR_Spawner_Base">
+	<defName>DOOR_Rad_Spawner</defName>
+  	<label>rad spawner</label>
+	<comps>
+		<li Class="CompProperties_Hatcher">
+	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
+        	<hatcherPawn>DOOR_Rad_Slime</hatcherPawn>
+        </li>
+	</comps>
+</ThingDef>
+
+<!-- Mosaic -->
+<ThingDef ParentName="DOOR_Spawner_Base">
+	<defName>DOOR_Mosaic_Spawner</defName>
+  	<label>mosaic spawner</label>
+	<comps>
+		<li Class="CompProperties_Hatcher">
+	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
+        	<hatcherPawn>DOOR_Mosaic_Slime</hatcherPawn>
+        </li>
+	</comps>
+</ThingDef>
+
+<!-- Quicksilver -->
+<ThingDef ParentName="DOOR_Spawner_Base">
+	<defName>DOOR_Quicksilver_Spawner</defName>
+  	<label>quicksilver spawner</label>
+	<comps>
+		<li Class="CompProperties_Hatcher">
+	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
+        	<hatcherPawn>DOOR_Quicksilver_Slime</hatcherPawn>
+        </li>
+	</comps>
+</ThingDef>
+
+<!-- Fire -->
+<ThingDef ParentName="DOOR_Spawner_Base">
+	<defName>DOOR_Fire_Spawner</defName>
+  	<label>fire spawner</label>
+	<comps>
+		<li Class="CompProperties_Hatcher">
+	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
+        	<hatcherPawn>DOOR_Fire_Slime</hatcherPawn>
+        </li>
+	</comps>
+</ThingDef>
+
+<!-- Crystal -->
+<ThingDef ParentName="DOOR_Spawner_Base">
+	<defName>DOOR_Crystal_Spawner</defName>
+  	<label>crystal spawner</label>
+	<comps>
+		<li Class="CompProperties_Hatcher">
+	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
+        	<hatcherPawn>DOOR_Crystal_Slime</hatcherPawn>
         </li>
 	</comps>
 </ThingDef>
