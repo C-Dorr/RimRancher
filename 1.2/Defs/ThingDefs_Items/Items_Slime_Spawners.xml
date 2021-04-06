@@ -2,92 +2,125 @@
 
 <Defs>
 
-<ThingDef Abstract="True" ParentName="EggFertBase">
+
+<!-- Removing due to Parent Node Not Found issue. Not sure what was causing it.-->
+<!--ThingDef Abstract="True" ParentName="EggFertBase">
 	<defName>DOOR_Spawner_Base</defName>
 	<thingClass>ThingWithComps</thingClass>
 	<graphicData>
-		<texPath>Things/Resource/SpawnSquare</texPath>
+		<texPath>Things/Resource/SpawnSquare/SpawnSquare</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
-</ThingDef>
+</ThingDef-->
 
 <!-- PINK -->
-<ThingDef ParentName="DOOR_Spawner_Base">
+<ThingDef ParentName="EggFertBase">
 	<defName>DOOR_Pink_Spawner</defName>
   	<label>pink spawner</label>
+	<thingClass>ThingWithComps</thingClass>
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
         	<hatcherPawn>DOOR_Pink_Slime</hatcherPawn>
         </li>
 	</comps>
+	<graphicData>
+		<texPath>Things/Resource/SpawnSquare/SpawnSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
 </ThingDef>
 
 
 <!-- Puddle -->
-<ThingDef ParentName="DOOR_Spawner_Base">
+<ThingDef ParentName="EggFertBase">
 	<defName>DOOR_Puddle_Spawner</defName>
   	<label>puddle spawner</label>
+	<thingClass>ThingWithComps</thingClass>
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
         	<hatcherPawn>DOOR_Puddle_Slime</hatcherPawn>
         </li>
 	</comps>
+	<graphicData>
+		<texPath>Things/Resource/SpawnSquare/SpawnSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
 </ThingDef>
 
 <!-- Phosphor -->
-<ThingDef ParentName="DOOR_Spawner_Base">
+<ThingDef ParentName="EggFertBase">
 	<defName>DOOR_Phosphor_Spawner</defName>
   	<label>phosphor spawner</label>
+  	<thingClass>ThingWithComps</thingClass>
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
         	<hatcherPawn>DOOR_Phosphor_Slime</hatcherPawn>
         </li>
 	</comps>
+	<graphicData>
+		<texPath>Things/Resource/SpawnSquare/SpawnSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
 </ThingDef>
 
 <!-- Tabby -->
-<ThingDef ParentName="DOOR_Spawner_Base">
+<ThingDef ParentName="EggFertBase">
 	<defName>DOOR_Tabby_Spawner</defName>
   	<label>tabby spawner</label>
+  	<thingClass>ThingWithComps</thingClass>
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
         	<hatcherPawn>DOOR_Tabby_Slime</hatcherPawn>
         </li>
 	</comps>
+	<graphicData>
+		<texPath>Things/Resource/SpawnSquare/SpawnSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
 </ThingDef>
 
 <!-- Honey -->
-<ThingDef ParentName="DOOR_Spawner_Base">
+<ThingDef ParentName="EggFertBase">
 	<defName>DOOR_Honey_Spawner</defName>
   	<label>honey spawner</label>
+	<thingClass>ThingWithComps</thingClass>	
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
         	<hatcherPawn>DOOR_Honey_Slime</hatcherPawn>
         </li>
 	</comps>
+	<graphicData>
+		<texPath>Things/Resource/SpawnSquare/SpawnSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
 </ThingDef>
 
 <!-- Hunter -->
-<ThingDef ParentName="DOOR_Spawner_Base">
+<ThingDef ParentName="EggFertBase">
 	<defName>DOOR_Hunter_Spawner</defName>
   	<label>hunter spawner</label>
+  	<thingClass>ThingWithComps</thingClass>	
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
         	<hatcherPawn>DOOR_Hunter_Slime</hatcherPawn>
         </li>
 	</comps>
+	<graphicData>
+		<texPath>Things/Resource/SpawnSquare/SpawnSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
 </ThingDef>
 
 <!-- Quantum -->
-<ThingDef ParentName="DOOR_Spawner_Base">
+<ThingDef ParentName="EggFertBase">
 	<defName>DOOR_Quantum_Spawner</defName>
   	<label>quantum spawner</label>
+	<thingClass>ThingWithComps</thingClass>	
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
@@ -97,111 +130,158 @@
 </ThingDef>
 
 <!-- Dervish -->
-<ThingDef ParentName="DOOR_Spawner_Base">
+<ThingDef ParentName="EggFertBase">
 	<defName>DOOR_Dervish_Spawner</defName>
   	<label>dervish spawner</label>
+  	<thingClass>ThingWithComps</thingClass>	
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
         	<hatcherPawn>DOOR_Dervish_Slime</hatcherPawn>
         </li>
 	</comps>
+	<graphicData>
+		<texPath>Things/Resource/SpawnSquare/SpawnSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
 </ThingDef>
 
 <!-- Tangle -->
-<ThingDef ParentName="DOOR_Spawner_Base">
+<ThingDef ParentName="EggFertBase">
 	<defName>DOOR_Tangle_Spawner</defName>
   	<label>tangle spawner</label>
+  	<thingClass>ThingWithComps</thingClass>	
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
         	<hatcherPawn>DOOR_Tangle_Slime</hatcherPawn>
         </li>
 	</comps>
+	<graphicData>
+		<texPath>Things/Resource/SpawnSquare/SpawnSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
 </ThingDef>
 
 <!-- Boom -->
-<ThingDef ParentName="DOOR_Spawner_Base">
+<ThingDef ParentName="EggFertBase">
 	<defName>DOOR_Boom_Spawner</defName>
   	<label>boom spawner</label>
+	<thingClass>ThingWithComps</thingClass>	
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
         	<hatcherPawn>DOOR_Boom_Slime</hatcherPawn>
         </li>
 	</comps>
+	<graphicData>
+		<texPath>Things/Resource/SpawnSquare/SpawnSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
 </ThingDef>
 
 <!-- Rock -->
-<ThingDef ParentName="DOOR_Spawner_Base">
+<ThingDef ParentName="EggFertBase">
 	<defName>DOOR_Rock_Spawner</defName>
   	<label>rock spawner</label>
+	<thingClass>ThingWithComps</thingClass>	
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
         	<hatcherPawn>DOOR_Rock_Slime</hatcherPawn>
         </li>
 	</comps>
+	<graphicData>
+		<texPath>Things/Resource/SpawnSquare/SpawnSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
 </ThingDef>
 
 <!-- Rad -->
-<ThingDef ParentName="DOOR_Spawner_Base">
+<ThingDef ParentName="EggFertBase">
 	<defName>DOOR_Rad_Spawner</defName>
   	<label>rad spawner</label>
+	<thingClass>ThingWithComps</thingClass>	
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
         	<hatcherPawn>DOOR_Rad_Slime</hatcherPawn>
         </li>
 	</comps>
+	<graphicData>
+		<texPath>Things/Resource/SpawnSquare/SpawnSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
 </ThingDef>
 
 <!-- Mosaic -->
-<ThingDef ParentName="DOOR_Spawner_Base">
+<ThingDef ParentName="EggFertBase">
 	<defName>DOOR_Mosaic_Spawner</defName>
   	<label>mosaic spawner</label>
+  	<thingClass>ThingWithComps</thingClass>	
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
         	<hatcherPawn>DOOR_Mosaic_Slime</hatcherPawn>
         </li>
 	</comps>
+	<graphicData>
+		<texPath>Things/Resource/SpawnSquare/SpawnSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
 </ThingDef>
 
 <!-- Quicksilver -->
-<ThingDef ParentName="DOOR_Spawner_Base">
+<ThingDef ParentName="EggFertBase">
 	<defName>DOOR_Quicksilver_Spawner</defName>
   	<label>quicksilver spawner</label>
+	<thingClass>ThingWithComps</thingClass>	
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
         	<hatcherPawn>DOOR_Quicksilver_Slime</hatcherPawn>
         </li>
 	</comps>
+	<graphicData>
+		<texPath>Things/Resource/SpawnSquare/SpawnSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
 </ThingDef>
 
 <!-- Fire -->
-<ThingDef ParentName="DOOR_Spawner_Base">
+<ThingDef ParentName="EggFertBase">
 	<defName>DOOR_Fire_Spawner</defName>
   	<label>fire spawner</label>
+	<thingClass>ThingWithComps</thingClass>
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
         	<hatcherPawn>DOOR_Fire_Slime</hatcherPawn>
         </li>
 	</comps>
+	<graphicData>
+		<texPath>Things/Resource/SpawnSquare/SpawnSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
 </ThingDef>
 
 <!-- Crystal -->
-<ThingDef ParentName="DOOR_Spawner_Base">
+<ThingDef ParentName="EggFertBase">
 	<defName>DOOR_Crystal_Spawner</defName>
   	<label>crystal spawner</label>
+	<thingClass>ThingWithComps</thingClass>
 	<comps>
 		<li Class="CompProperties_Hatcher">
 	        <hatcherDaystoHatch>0.0</hatcherDaystoHatch>
         	<hatcherPawn>DOOR_Crystal_Slime</hatcherPawn>
         </li>
 	</comps>
+	<graphicData>
+		<texPath>Things/Resource/SpawnSquare/SpawnSquare</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
 </ThingDef>
+
+
 
 </Defs>

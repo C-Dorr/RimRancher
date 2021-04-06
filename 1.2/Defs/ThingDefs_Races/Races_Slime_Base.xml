@@ -7,6 +7,9 @@
 			Maybe make this LeatherAmount and direct the image to plort images.-->
 			<MoveSpeed>4.0</MoveSpeed>
 		</statBases>
+		<tradeTags>
+			<li>DOOR_Slime_Tag</li>
+		</tradeTags>
 		<race>
 			<hasGenders>false</hasGenders>
 			<trainability>Simple</trainability>

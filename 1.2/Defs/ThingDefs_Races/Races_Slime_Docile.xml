@@ -104,8 +104,7 @@
 		<defName>DOOR_Phosphor_Slime</defName>
 		<label>phosphor slime</label>
 		<!--Description taken from https://slimerancher.fandom.com/wiki/Pink_Slime -->
-		<description>Phosphor slimes come out at night, flying about the moonlit range upon their translucent wings. Phosphor slimes have a luminescent slime core that pulses with a soft glow, making them easy to spot. It's for this reason ranchers sometimes refer to them as 'low stars'. (RimRancher has taken liberties with this for now;
-		phosphor slimes are omnivorous.)
+		<description>Phosphor slimes come out at night, flying about the moonlit range upon their translucent wings. Phosphor slimes have a luminescent slime core that pulses with a soft glow, making them easy to spot. It's for this reason ranchers sometimes refer to them as 'low stars'. (RimRancher has taken liberties with this for now; phosphor slimes are omnivorous.)
 		</description>
 		<statBases>
 			<MoveSpeed>4.0</MoveSpeed>
