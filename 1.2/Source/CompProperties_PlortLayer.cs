@@ -14,5 +14,7 @@ namespace RimRancher
 		public float plortLayIntervalDays = 0.25f;
 		
 		public ThingDef plortDef;
+
+		public float plortProgress = 0.0f;
 	}
 }

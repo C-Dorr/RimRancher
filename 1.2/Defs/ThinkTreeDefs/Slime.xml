@@ -181,7 +181,7 @@
             <li Class="ThinkNode_Tagger">
               <tagToGive>SatisfyingNeeds</tagToGive>
               <subNodes>
-                <li Class="JobGiver_EatRandom"/>
+                <li Class="RimRancher.JobGiver_EatRandomSlimeFood"/>
               </subNodes>
             </li>
           </subNodes>

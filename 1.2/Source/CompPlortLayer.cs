@@ -26,7 +26,7 @@ namespace RimRancher
         {
 			get
             {
-				return this.Active && this.plortProgress >= 1f;
+				return this.Active && Props.plortProgress >= 1f;
             }
         }
 
@@ -40,10 +40,10 @@ namespace RimRancher
 				{
 					num *= PawnUtility.BodyResourceGrowthSpeed(pawn);
 				}
-				this.plortProgress += num;
-				if (this.plortProgress > 1f)
+				Props.plortProgress += num;
+				if (Props.plortProgress > 1f)
 				{
-					this.plortProgress = 1f;
+					Props.plortProgress = 1f;
 				}
 			}
 		}
@@ -56,7 +56,7 @@ namespace RimRancher
 				Log.Error("ProducePlort while not Active: " + this.parent, false);
 			}
 
-			this.plortProgress = 0f;
+			Props.plortProgress = 0f;
 			int randomInRange = this.Props.plortCountRange.RandomInRange;
 			if (randomInRange == 0)
 			{
@@ -78,12 +78,20 @@ namespace RimRancher
 			{
 				return null;
 			}
-			return "Plort Progress".Translate() + ": " + this.plortProgress.ToStringPercent();
+			if(Props.plortProgress != null)
+            {
+				return "Plort Progress".Translate() + ": " + Props.plortProgress.ToStringPercent();
+			}
+			else
+            {
+				return "Plort Progress: 0.0%".Translate();
+            }
+
 		}
 		public override void PostExposeData()
 		{
 			base.PostExposeData();
-			Scribe_Values.Look<float>(ref this.plortProgress, "plortProgress", 0f, false);
+			Scribe_Values.Look<float>(ref Props.plortProgress, "plortProgress", 0f, false);
 		}
 
 		private float plortProgress;
